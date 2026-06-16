@@ -7,8 +7,7 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 DATABASE_NAME = os.getenv("DATABASE_NAME")
 
+
 client = AsyncIOMotorClient(MONGO_URI)
 
 db = client[DATABASE_NAME]
-print("MONGO_URI =", MONGO_URI)
-print("DATABASE_NAME =", DATABASE_NAME)
